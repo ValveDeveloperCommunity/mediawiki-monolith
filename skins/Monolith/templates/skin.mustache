@@ -55,27 +55,25 @@
 				{{{html-categories}}}
 			</div>
 		</div>
+
+		<footer id="footer" class="mw-footer" role="contentinfo" {{{html-user-language-attributes}}}>
+			{{#data-footer}}
+				<ul>
+					{{#data-info}}
+						{{#array-items}}<li id="{{name}}">{{{html}}}</li>{{/array-items}}
+					{{/data-info}}
+				</ul>
+				<ul>
+					{{#data-places}}
+						{{#array-items}}<li id="{{name}}">{{{html}}}</li>{{/array-items}}
+					{{/data-places}}
+					{{#data-icons}}
+						{{#array-items}}
+							<li id="f-{{name}}ico" class="footer-icons">{{{html}}}</li>
+						{{/array-items}}
+					{{/data-icons}}
+				</ul>
+			{{/data-footer}}
+		</footer>
 	</div>
 </main>
-
-
-
-<footer id="footer" class="mw-footer" role="contentinfo" {{{html-user-language-attributes}}}>
-	{{#data-footer}}
-		<ul>
-			{{#data-info}}
-				{{#array-items}}<li id="{{name}}">{{{html}}}</li>{{/array-items}}
-			{{/data-info}}
-		</ul>
-		<ul>
-			{{#data-places}}
-				{{#array-items}}<li id="{{name}}">{{{html}}}</li>{{/array-items}}
-			{{/data-places}}
-			{{#data-icons}}
-				{{#array-items}}
-					<li id="f-{{name}}ico" class="footer-icons">{{{html}}}</li>
-				{{/array-items}}
-			{{/data-icons}}
-		</ul>
-	{{/data-footer}}
-</footer>
