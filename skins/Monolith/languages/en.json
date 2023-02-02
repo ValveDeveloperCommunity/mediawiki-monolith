@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Кирилл Газин"
+		]
+	},
+	"skinname-monolith": "Monolith",
+	"monolith-desc": "No description",
+	"monolith.css": "",
+	"monolith.js": "",
+	"monolith-jumptotop": "back to top",
+	"monolith-jumptopersonal": "user tools",
+	"monolith-jumptonavigation": "Jump to navigation",
+	"monolith-jumptosearch": "Jump to search",
+	"monolith-more-actions": "More",
+	"cactions-mobile": "Page actions",
+	"monolith-cactions-label": "Page actions",
+	"monolith-notifications-link": "Notifications ($1)",
+	"monolith-notifications-link-none": "Notifications"
+}
