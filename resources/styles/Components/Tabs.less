@@ -22,23 +22,16 @@
         display: flex;
         list-style: none;
         border-left: 1px solid;
+        border-right: 1px solid;
         border-image: linear-gradient(0deg, #525252, transparent);
         border-image-slice: 1;
         white-space: nowrap;
         margin: 0;
-        
-        &:last-child{
-          border-right: 1px solid;
-        }
 
         &.selected{
           background: linear-gradient(0deg, #262626, transparent);
 
           a{ text-decoration: none; color: @text-tabs-selected !important; }
-        }
-
-        &.new{
-          a{ color: @link-primary-new !important; }
         }
 
         a{
@@ -49,12 +42,12 @@
     }
   }
 
-  .search{
+  .search {
     width: 20vw;
     margin-left: 1em;
     margin-right: 1em;
 
-    input{
+    input {
       width: 100%;
       background: @background-search;
       border: 1px solid #666666;

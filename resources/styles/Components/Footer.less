@@ -1,0 +1,32 @@
+footer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  font-size: 1.1em;
+  color: @text-footer;
+  padding: 1rem;
+
+  ul{
+    display: flex;
+    align-items: center;
+    gap: 1.3em;
+    margin: 0;
+
+    &:last-child{
+      margin-top: 10px;
+
+      li:last-child{
+        margin-left: auto;
+      }
+    }
+
+    li{
+  		display: inline;
+      margin: 0;
+
+      a, img{ user-select: none; }
+  	}
+  }
+}
