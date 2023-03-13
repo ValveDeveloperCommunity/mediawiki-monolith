@@ -1,6 +1,4 @@
-// Upload File
-
-// Categories Media
+// Categories
 .thumb{
   width: 150px;
   height: 150px;
@@ -27,4 +25,39 @@
     width: auto;
     height: auto;
   }
+}
+
+// Wiki Editor
+.wikiEditor-ui-view {
+  border-color: #585858 !important;
+
+  .wikiEditor-ui-top {
+    border-color: #585858 !important;
+
+    .wikiEditor-ui-toolbar {
+        background-color: #323232;
+
+        a::before { filter: invert(1); }
+        .section { border-color: #545454; }
+
+        .group {
+          border-color: #585858;
+
+          .oo-ui-iconElement { filter: invert(1); }
+          .label { color: #999693; }
+        }
+
+        .label::after { filter: invert(1); }
+        .page-table th { color: #e5ddd6; }
+        .page-table td { color: @text-primary; }
+    }
+  }
+
+  .wikiEditor-ui-text textarea { border: 0 !important; }
+}
+
+.editOptions {
+  background-color: #323232;
+  border-color: #585858;
+  color: currentColor;
 }
