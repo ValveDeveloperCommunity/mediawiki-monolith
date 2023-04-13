@@ -1,4 +1,4 @@
-# Monolith `0.1.2`
+# Monolith `0.1.3`
 An improved skin of the [Valve Developer Community](https://developer.valvesoftware.com) wiki. At the moment it's more like a sketch.
 
 # Gallery

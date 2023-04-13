@@ -6,14 +6,13 @@
   box-sizing: border-box;
   padding: 16px 16px 0 24px;
 
-
   .portlet{ width: 100%; }
 
   h3{
-    border-bottom: 1px solid @border-sidebar;
+    border-bottom: var(--border-sidebar);
     font-size: 1.2em;
     font-weight: bold;
-    color: @text-sidebar;
+    color: var(--color-text-sidebar);
     padding: 0.25em 0;
     margin-top: 0.5em;
   }
@@ -34,9 +33,9 @@
         margin: 0;
 
         a{
-          color: @link-desaturated !important;
+          color: var(--color-link-desaturated) !important;
 
-          &:visited{ color: @link-desaturated !important; }
+          &:visited{ color: var(--color-link-desaturated) !important; }
         }
       }
     }

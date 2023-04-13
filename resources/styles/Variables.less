@@ -1,24 +1,39 @@
-@import 'mediawiki.mixins';
-@import 'mediawiki.skin.variables.less';
+:root {
+  // Global
+  --global-width: 1366px;
 
-// Basic Colors
-@white: #fff;
-@black: #000;
+  // Images
+  --image-background-primary: url(/w/skins/Monolith/resources/images/backgrounds/gradient-primary.png);
+  --image-background-header: url(/w/skins/Monolith/resources/images/backgrounds/header.jpg);
+  --image-icon-help: url(/w/skins/Monolith/resources/images/icons/help.svg?46d34);
 
-// Element Colors
-@background-primary: #000000;
-@background-content: #262626;
-@background-search: linear-gradient(0deg, #141414, #202020);
+  // Colors
+  --white: #FFF;
+  --black: #000;
 
-@border-primary: #525252;
-@border-sidebar: #3d3c39;
+  --color-background-primary: #000000;
+  --color-background-secondary: #262626;
+  --color-background-input: #202020;
 
-@text-primary: #b9b7b5;
-@text-sidebar: #b0aeaC;
-@text-footer: #707070;
-@text-tabs-selected: #b0aeac;
+  --color-text-primary: #B9B7B5;
+  --color-text-sidebar: #B0AEAC;
+  --color-text-footer: #707070;
+  --color-text-input: #B9B7B5;
+  --color-text-tab-selected: #B0AEAC;
 
-@link-primary: #8bb9e0;
-@link-primary-new: #d64b4b;
-@link-primary-visited: #5081d1;
-@link-desaturated: #688ba8;
+  --color-link-primary: #8BB9E0;
+  --color-link-primary-active: #FFA500;
+  --color-link-primary-visited: #5081D1;
+  --color-link-primary-new: #D64B4B;
+  --color-link-desaturated: #688BA8;
+
+  // Gradients
+  --gradient-background-search: linear-gradient(0deg, #141414, #202020);
+  --gradient-tab: linear-gradient(0deg, transparent 1px, rgba(38,38,38,0.3) 30%, transparent);
+  --gradient-tab-selected: linear-gradient(0deg, #262626, transparent);
+
+  // Borders
+  --border-primary: 1px solid #525252;
+  --border-sidebar: 1px solid #3D3C39;
+  --border-input: 1px solid #646462;
+}

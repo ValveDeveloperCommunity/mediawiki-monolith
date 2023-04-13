@@ -3,8 +3,8 @@ header{
   align-items: center;
   width: 100%;
   height: 60px;
-  background-color: @background-content;
-  background-image: url(/w/resources/assets/backgrounds/header.jpg);
+  background-color: var(--color-background-secondary);
+  background-image: var(--image-background-header);
   background-position: 0 0;
   background-repeat: repeat-x;
   margin-bottom: 16px;
@@ -12,7 +12,7 @@ header{
   .container {
     display: flex;
     align-items: center;
-    width: 1280px;
+    width: var(--global-width);
     height: 100%;
     position: relative;
     margin: 0 auto;
@@ -39,14 +39,15 @@ header{
         font-size: 1.2em;
 
         a {
-          color: @white !important;
+          color: var(--white) !important;
 
-          &:visited { color: @white !important; }
+          &:visited { color: var(--white) !important; }
+          &.new { color: var(--white) !important; }
         }
       }
 
       #pt-userpage {
-        background-image: url(data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 width=%2216%22 height=%2216%22 viewBox=%220 0 4.233 4.233%22%3E %3Cdefs%3E %3ClinearGradient id=%22c%22%3E %3Cstop offset=%220%22 stop-color=%22%23fbeacf%22/%3E %3Cstop offset=%221%22 stop-color=%22%23f0bf7b%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22b%22%3E %3Cstop offset=%220%22 stop-color=%22%23f9e0ba%22/%3E %3Cstop offset=%221%22 stop-color=%22%23de8a3d%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22a%22%3E %3Cstop offset=%220%22 stop-color=%22%23dfedc7%22/%3E %3Cstop offset=%221%22 stop-color=%22%2389b92f%22/%3E %3C/linearGradient%3E %3ClinearGradient xlink:href=%22%23a%22 id=%22d%22 x1=%22.794%22 x2=%223.175%22 y1=%222.778%22 y2=%222.778%22 gradientUnits=%22userSpaceOnUse%22/%3E %3ClinearGradient xlink:href=%22%23b%22 id=%22f%22 x1=%221.587%22 x2=%222.381%22 y1=%221.058%22 y2=%221.587%22 gradientUnits=%22userSpaceOnUse%22/%3E %3CradialGradient xlink:href=%22%23c%22 id=%22e%22 cx=%221.984%22 cy=%222.381%22 r=%22.397%22 fx=%221.984%22 fy=%221.984%22 gradientTransform=%22matrix%28.33333 0 0 1.30283 1.323 -.469%29%22 gradientUnits=%22userSpaceOnUse%22/%3E %3C/defs%3E %3Cpath fill=%22url%28%23d%29%22 fill-rule=%22evenodd%22 d=%22m.661 3.307.133-.661.264-.265c.53-.264 1.323-.264 1.852 0l.265.265.132.661z%22/%3E %3Cpath fill=%22url%28%23e%29%22 fill-rule=%22evenodd%22 d=%22M1.587 2.117v.264l.265.265h.265l.264-.265v-.264c-.264-.265-.529-.265-.793 0z%22/%3E %3Cpath fill=%22url%28%23f%29%22 fill-rule=%22evenodd%22 d=%22M1.323 1.058v.53l.264.264c.265.265.53.265.794 0l.265-.265v-.529L2.116.53h-.264z%22/%3E %3Cpath fill=%22%234e4e4e%22 d=%22M2.646 1.058v.53h.264v-.53zM2.38 2.117v.264h.53v-.264zm.53.264v.265h.264V2.38zm.264.265v.529H.529v.265h2.91v-.795z%22/%3E %3Cpath fill=%22%23a3a3a3%22 d=%22M1.058 1.058v.53h.265v-.53zm.265.53v.264h.264v-.265zm-.265.529v.264h.53v-.264zm0 .264H.794v.265h.264zm-.264.265H.529v.529h.265z%22/%3E %3Cpath fill=%22%23768854%22 d=%22M1.587 2.381v.265h.265V2.38zm.265.265v.264h.265v-.264zm.265 0h.264V2.38h-.264z%22/%3E %3Cpath fill=%22%23a6774d%22 d=%22M2.381 1.587v.265h.265v-.265zm0 .265h-.793v.265h.793z%22/%3E %3Cpath fill=%22%239a7b54%22 fill-rule=%22evenodd%22 d=%22M1.984.397v.132c0 .265-.396.794-.793.794l.132-.53.264-.264z%22/%3E %3Cpath fill=%22%2393642b%22 fill-rule=%22evenodd%22 d=%22M1.984.397v.132c0 .265.397.794.794.794l-.132-.53L2.38.53z%22/%3E %3Cpath fill=%22%2386735c%22 d=%22M1.587.265v.264h.794V.265zm0 .264h-.264v.265h.264zm-.264.265h-.265v.529h.265z%22/%3E %3Cpath fill=%22%235a4934%22 d=%22M2.381.53v.264h.265V.529zm.265.264v.529h.264v-.53z%22/%3E %3Cpath fill=%22%2383b625%22 d=%22M1.323 2.91h.265v.265h-.265z%22/%3E %3Cpath fill=%22%236d971f%22 d=%22M2.646 2.91h.265v.265h-.265z%22/%3E %3Cpath fill=%22%23cde3a8%22 d=%22M1.058 2.91h.265v.265h-.265z%22/%3E %3Cpath fill=%22%23a9cd69%22 d=%22M2.381 2.91h.265v.265h-.265z%22/%3E %3C/svg%3E);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2213.836%22 viewBox=%220 0 12 13.836%22%3E %3Cpath fill=%22%2372777d%22 d=%22M1.938%2C6.656c-1.32%2C1.485-1.47%2C3.15-0.97%2C4.25c0.323%2C0.707%2C0.78%2C1.127%2C1.313%2C1.375 c0.496%2C0.229%2C1.074%2C0.273%2C1.658%2C0.282c0.023%2C0%2C0.04%2C0.03%2C0.062%2C0.03h4.187c0.61%2C0%2C1.225-0.125%2C1.75-0.405 c0.527-0.28%2C0.961-0.718%2C1.188-1.376c0.335-0.964%2C0.175-2.529-1.094-4.03C9.094%2C7.954%2C7.68%2C8.719%2C6.065%2C8.719 c-1.677%2C0-3.182-0.812-4.125-2.063H1.938z%22/%3E %3Cpath fill=%22%2372777d%22 d=%22M6.063%2C0c-1.89%2C0-3.595%2C1.674-3.594%2C3.563C2.467%2C5.45%2C4.173%2C7.155%2C6.06%2C7.155 c1.89%2C0%2C3.564-1.705%2C3.563-3.593C9.625%2C1.673%2C7.95%2C0%2C6.063%2C0L6.063%2C0z%22/%3E %3C/svg%3E");
         background-position: top left;
         background-repeat: no-repeat;
         padding-left: 20px;

@@ -1,4 +1,6 @@
-@import 'variables.less';
+@import 'Variables.less';
+
+* { box-sizing: border-box; }
 
 ::-webkit-scrollbar { width: 12px; }
 
@@ -6,32 +8,30 @@
 
 ::-webkit-scrollbar-thumb { background-color: rgb(82,82,82); }
 
-*{ box-sizing: border-box; }
-
 body {
-  background-color: @background-primary;
-  background-image: url(/w/resources/assets/backgrounds/gradient-primary.png);
+  background-color: var(--color-background-primary);
+  background-image: var(--image-background-primary);
   background-position: 0 60px;
   background-repeat: repeat-x;
 
   font-family: sans-serif;
   font-size: x-small;
-  color: @text-primary;
+  color: var(--color-text-primary);
 }
 
 a {
-  color: @link-primary !important;
+  color: var(--color-link-primary) !important;
 
-  &:focus{ text-decoration: none !important; }
-  &:active{ text-decoration: underline !important; }
-  &:visited{ color: @link-primary-visited !important; }
-  &.new{ color: @link-primary-new !important; }
+  &:focus { text-decoration: none !important; }
+  &:visited { color: var(--color-link-primary-visited) !important; }
+  &:active { color: var(--color-link-primary-active) !important; text-decoration: underline !important; }
+  &.new { color: var(--color-link-primary-new) !important; }
 }
 
 input {
-	background-color: #202020 !important;
-	color: #B9B7B5 !important;
-	border: 1px solid #646462 !important;
+	background-color: var(--color-background-input);
+	color: var(--color-input-text);
+	border: var(--border-input);
 }
 
 textarea {
@@ -41,46 +41,46 @@ textarea {
   color: #D8D7D6 !important;
 }
 
-main{
+main {
   display: flex;
-  max-width: 1280px;
+  max-width: var(--global-width);
   margin: 0 auto;
 
-  .right{
+  .right {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
 
-    .content{
-      background: @background-content;
-      border: 1px solid @border-primary;
+    .content {
+      background: var(--color-background-secondary);
+      border: var(--border-primary);
     	line-height: 1.5em;
       font-size: 127%;
       padding: 1.25em 1.5em 1.5em 1.5em;
 
-      h1, h2, h3, h4, h5, h6{
-        color: @white !important;
-        font-weight: normal !important;
-        padding: .6em 0 .17em 0 !important;
+      h1, h2, h3, h4, h5, h6 {
+        color: var(--white);
+        font-weight: normal;
+        padding: .6em 0 .17em 0;
         margin: 0;
       }
-      h1{
-        border-bottom: 1px solid @border-primary !important;
-        padding: 1em 0 3px 0 !important;
-        margin: 1em 0 0.6em 0 !important;
+      h1 {
+        border-bottom: var(--border-primary);
+        padding: 1em 0 3px 0;
+        margin: 1em 0 0.6em 0;
       }
 
-      h2{
-        border-bottom: 1px solid @border-primary !important;
-        padding: 1em 0 3px 0 !important;
-        margin: 1em 0 0.6em 0 !important;
+      h2 {
+        border-bottom: var(--border-primary);
+        padding: 1em 0 3px 0;
+        margin: 1em 0 0.6em 0;
       }
 
-      .firstHeading{
-        line-height: 1.2em !important;
-        padding: .6em 0 0 0 !important;
-        margin: 0 0 0.25em 0 !important;
+      .firstHeading {
+        line-height: 1.2em;
+        padding: .6em 0 0 0;
+        margin: 0 0 0.25em 0;
       }
     }
   }
@@ -94,4 +94,5 @@ main{
 @import 'Components/Footer.less';
 
 // MediaWiki
+@import 'MediaWiki/Common.less';
 @import 'MediaWiki/Categories.less';
