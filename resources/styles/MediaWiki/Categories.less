@@ -1,63 +1,29 @@
-// Categories
-.thumb {
-  width: 150px;
-  height: 150px;
-  background: #222222 !important;
-  border: 1px solid #545454 !important;
-  transition: .1s;
-  position: relative;
+.gallerybox {
+  .thumb {
+    width: 150px;
+    height: 150px;
+    background: #222222 !important;
+    border: 1px solid #545454 !important;
+    transition: .1s;
+    position: relative;
 
-  &:hover {
-    background: #323232 !important;
-  }
+    &:hover {
+      background: #323232 !important;
+    }
 
-  a {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+    a {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
 
-  img {
-    width: auto;
-    height: auto;
-  }
-}
-
-// Wiki Editor
-.wikiEditor-ui-view {
-  border-color: #585858 !important;
-
-  .wikiEditor-ui-top {
-    border-color: #585858 !important;
-
-    .wikiEditor-ui-toolbar {
-        background-color: #323232;
-
-        a::before { filter: invert(1); }
-        .section { border-color: #545454; }
-
-        .group {
-          border-color: #585858;
-
-          .oo-ui-iconElement { filter: invert(1); }
-          .label { color: #999693; }
-        }
-
-        .label::after { filter: invert(1); }
-        .page-table th { color: #E5DDD6; }
-        .page-table td { color: var(--color-text-primary); }
+    img {
+      width: auto;
+      height: auto;
     }
   }
-
-  .wikiEditor-ui-text textarea { background: radial-gradient(at top right, #292929, #282828) !important; border: 0 !important; padding: 4px 8px; }
-}
-
-.editOptions {
-  background-color: #323232;
-  border-color: #585858;
-  color: currentColor;
 }

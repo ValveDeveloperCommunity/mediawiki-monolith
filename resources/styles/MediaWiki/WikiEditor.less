@@ -1,0 +1,33 @@
+.wikiEditor-ui-view {
+  border-color: #585858 !important;
+
+  .wikiEditor-ui-top {
+    border-color: #585858 !important;
+
+    .wikiEditor-ui-toolbar {
+        background-color: #323232;
+
+        a::before { filter: invert(1); }
+        .section { border-color: #545454; }
+
+        .group {
+          border-color: #585858;
+
+          .oo-ui-iconElement { filter: invert(1); }
+          .label { color: #999693; }
+        }
+
+        .label::after { filter: invert(1); }
+        .page-table th { color: #E5DDD6; }
+        .page-table td { color: var(--color-text-primary); }
+    }
+  }
+
+  .wikiEditor-ui-text textarea { background: radial-gradient(at top right, #292929, #282828) !important; border: 0 !important; padding: 4px 8px; }
+}
+
+.editOptions {
+  background-color: #323232;
+  border-color: #585858;
+  color: currentColor;
+}

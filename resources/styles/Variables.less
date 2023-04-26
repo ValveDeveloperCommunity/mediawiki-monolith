@@ -11,11 +11,12 @@
   --white: #FFF;
   --black: #000;
 
-  --color-background-primary: #000000;
+  --color-background-primary: var(--black);
   --color-background-secondary: #262626;
   --color-background-input: #202020;
 
   --color-text-primary: #B9B7B5;
+  --color-text-primary-bold: #D1CFCC;
   --color-text-sidebar: #B0AEAC;
   --color-text-footer: #707070;
   --color-text-input: #B9B7B5;
@@ -27,13 +28,15 @@
   --color-link-primary-new: #D64B4B;
   --color-link-desaturated: #688BA8;
 
+  --color-border-primary: #525252;
+
   // Gradients
   --gradient-background-search: linear-gradient(0deg, #141414, #202020);
   --gradient-tab: linear-gradient(0deg, transparent 1px, rgba(38,38,38,0.3) 30%, transparent);
-  --gradient-tab-selected: linear-gradient(0deg, #262626, transparent);
+  --gradient-tab-selected: linear-gradient(0deg, var(--color-background-secondary), transparent);
 
   // Borders
-  --border-primary: 1px solid #525252;
+  --border-primary: 1px solid var(--color-border-primary);
   --border-sidebar: 1px solid #3D3C39;
   --border-input: 1px solid #646462;
 }
