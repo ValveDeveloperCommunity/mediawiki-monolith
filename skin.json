@@ -74,9 +74,8 @@
 		"skins.monolith.scripts": {
 			"targets": [ "desktop", "mobile" ],
 			"packageFiles": [
-				"resources/scripts/empty.js"
+				"resources/scripts/common.js"
 			],
-			"styles": "resources/scripts/empty.less",
 			"dependencies": [
 				"oojs-ui.styles.icons-alerts",
 				"mediawiki.util"
